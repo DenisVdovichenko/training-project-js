@@ -23,7 +23,16 @@
 // let userImg = null;
 
 //object
-const obj = {};
-const obj2 = new Object();
-console.log(typeof obj);
-console.log(typeof obj2);
+// const obj = {};
+// const obj2 = new Object();
+// console.log(typeof obj);
+// console.log(typeof obj2);
+
+// const buttonADD = document.getElementById('buttonADD');
+// document.body.innerHTML = buttonADD;
+// console.log(buttonADD);
+
+const x = 12.5;
+const y = 15;
+const c = x + y + true;
+console.log(c);
