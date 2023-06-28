@@ -42,11 +42,23 @@
 // }
 // sayHi();
 
-add(15, 27, 10);
-add(10, 20, 30);
-add(5, 10, 15);
+// add(15, 27, 10);
+// add(10, 20, 30);
+// add(5, 10, 15);
+
+// function add(a, b, c) {
+//   const result = a + b + c;
+//   console.log(`Addition result equals ${result}`);
+// }
 
 function add(a, b, c) {
-  const result = a + b + c;
-  console.log(`Addition result equals ${result}`);
+  return a + b + c;
 }
+
+// let result = add;
+// result();
+
+add();
+console.log(add(15, 27, 10));
+console.log(add(10, 20, 30));
+console.log(add(5, 10, 15));
