@@ -32,7 +32,21 @@
 // document.body.innerHTML = buttonADD;
 // console.log(buttonADD);
 
-const x = 12.5;
-const y = 15;
-const c = x + y + true;
-console.log(c);
+// const x = 12.5;
+// const y = 15;
+// const c = x + y + true;
+// console.log(c);
+
+// function sayHi() {
+//   console.log('Hello, this is my first function!');
+// }
+// sayHi();
+
+add(15, 27, 10);
+add(10, 20, 30);
+add(5, 10, 15);
+
+function add(a, b, c) {
+  const result = a + b + c;
+  console.log(`Addition result equals ${result}`);
+}
