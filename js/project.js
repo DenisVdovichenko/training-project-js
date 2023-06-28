@@ -51,14 +51,11 @@
 //   console.log(`Addition result equals ${result}`);
 // }
 
-function add(a, b, c) {
-  return a + b + c;
-}
+// function add(a, b, c) {
+//   return a + b + c;
+// }
 
-// let result = add;
-// result();
-
-add();
-console.log(add(15, 27, 10));
-console.log(add(10, 20, 30));
-console.log(add(5, 10, 15));
+// add();
+// console.log(add(15, 27, 10));
+// console.log(add(10, 20, 30));
+// console.log(add(5, 10, 15));
