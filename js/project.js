@@ -200,3 +200,21 @@
 //   }
 //   return discount;
 // }
+
+// Тернарные операторы
+
+// function checkStorage(available, ordered) {
+//   let message;
+//   message =
+//     ordered > available
+//       ? 'Not enough goods in stock!'
+//       : 'The order is accepted, our manager will contact you';
+//   return message;
+// }
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
+//   message = password === ADMIN_PASSWORD ? 'Access is allowed' : 'Access denied, wrong password!';
+//   return message;
+// }
