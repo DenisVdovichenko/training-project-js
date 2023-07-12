@@ -268,4 +268,18 @@
 //   return message;
 // }
 
+// Звертання до довжини рядка і його елементів
 
+// const courseTopic = 'JavaScript essentials';
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+// Присвой змінній substring вираз створення підрядка довжиною length символів (від початку) з рядка string.
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length);
+
+//   return substring;
+// }
