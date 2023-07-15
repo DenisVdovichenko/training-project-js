@@ -283,3 +283,18 @@
 
 //   return substring;
 // }
+
+// Напиши функцію findLongestWord(string), яка приймає довільний рядок, що складається тільки зі слів, розділених пробілом(параметр string),
+//     і повертає найдовше слово в цьому рядку.
+
+// function findLongestWord(string) {
+//   const words = string.split(' ');
+//   let longestWord = '';
+//   for (let i = 0; i < words.length; i++) {
+//     if (words[i].length > longestWord.length) {
+//       longestWord = words[i];
+//     }
+//   }
+
+//   return longestWord;
+// }
