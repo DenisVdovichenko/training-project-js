@@ -299,17 +299,18 @@
 //   return longestWord;
 // }
 
-Напиши функцію getEvenNumbers(start, end),
-яка повертає масив усіх парних чисел від start до end.Парним вважається число, яке ділиться на 2 без остачі(10 % 2 === 0).
+// Напиши функцію getEvenNumbers(start, end),
+// яка повертає масив усіх парних чисел від start до end.Парним вважається число, яке ділиться на 2 без остачі(10 % 2 === 0).
 
-function getEvenNumbers(start, end) {
-  const evenNumbers = [];
+// function getEvenNumbers(start, end) {
+//   const evenNumbers = [];
 
-  for (let i = start; i <= end; i++) {
-    if (i % 2 === 0) {
-      evenNumbers.push(i);
-    }
-  }
+//   for (let i = start; i <= end; i++) {
+//     if (i % 2 === 0) {
+//       evenNumbers.push(i);
+//     }
+//   }
 
-  return evenNumbers;
-}
+//   return evenNumbers;
+// }
+
