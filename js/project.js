@@ -314,3 +314,16 @@
 //   return evenNumbers;
 // }
 
+// Change code below this line
+function findMatches(arr, ...nums) {
+  const matches = []; // Don't change this line
+
+  for (const num of nums) {
+    if (arr.includes(num)) {
+      mathes.push(num);
+    }
+
+    // Change code above this line
+    return matches;
+  }
+}
