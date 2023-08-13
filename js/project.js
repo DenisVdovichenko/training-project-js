@@ -315,15 +315,52 @@
 // }
 
 // Change code below this line
-function findMatches(arr, ...nums) {
-  const matches = []; // Don't change this line
+// function findMatches(arr, ...nums) {
+//   const matches = []; // Don't change this line
 
-  for (const num of nums) {
-    if (arr.includes(num)) {
-      mathes.push(num);
+//   for (const num of nums) {
+//     if (arr.includes(num)) {
+//       mathes.push(num);
+//     }
+
+//     // Change code above this line
+//     return matches;
+//   }
+// }
+
+// Необхідно написати логіку обробки замовлення піци.Виконай рефакторинг методу order таким чином,
+//   щоб він приймав другим і третім параметром два колбеки onSuccess і onError.
+
+// Якщо у властивості pizzas відсутня піца з назвою з параметра pizzaName, метод order повинен повертати результат виклику колбека onError,
+//   передаючи йому аргументом рядок "There is no pizza with a name <имя пиццы> in the assortment."
+// Якщо у властивості pizzas присутня піца з назвою з параметра pizzaName, метод order повинен повертати результат виклику колбека onSuccess,
+//   передаючи йому аргументом назву замовленої піци.
+// Після оголошення об'єкта pizzaPalace ми додали колбеки і виклики методів. Будь ласка, нічого там не міняй.
+
+const pizzaPalace = {
+  pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+
+  order(pizzaName, onSuccess, onError) {
+    if (this.pizzas.includes(pizzaName)) {
+      onSuccess(`Your order is accepted. Cooking pizza ${pizzaName}.`);
+    } else {
+      onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
     }
+  },
+};
 
-    // Change code above this line
-    return matches;
-  }
+// Callback for onSuccess
+function makePizza(pizzaName) {
+  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
 }
+
+// Callback for onError
+function onOrderError(error) {
+  return `Error! ${error}`;
+}
+
+// Method calls with callbacks
+pizzaPalace.order('Smoked', makePizza, onOrderError);
+pizzaPalace.order('Four meats', makePizza, onOrderError);
+pizzaPalace.order('Big Mike', makePizza, onOrderError);
+pizzaPalace.order('Vienna', makePizza, onOrderError);
