@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-rallycoding": "^3.2.0",
+    "eslint-plugin-react": "^7.33.1"
+  }
+}
